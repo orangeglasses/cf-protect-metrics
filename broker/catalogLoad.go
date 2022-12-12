@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
-	"github.com/pivotal-cf/brokerapi/v7"
+	brokerapi "github.com/pivotal-cf/brokerapi/v8"
 )
 
 func CatalogLoad(catalogFilePath string, env brokerConfig) ([]brokerapi.Service, error) {

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/pivotal-cf/brokerapi/v7"
-	"github.com/pivotal-cf/brokerapi/v7/domain"
+	brokerapi "github.com/pivotal-cf/brokerapi/v8"
+	domain "github.com/pivotal-cf/brokerapi/v8/domain"
 )
 
 type broker struct {
@@ -27,7 +27,7 @@ func (b *broker) Provision(context context.Context, instanceID string, details d
 	}, nil
 }
 
-func (b *broker) GetInstance(ctx context.Context, instanceID string) (domain.GetInstanceDetailsSpec, error) {
+func (b *broker) GetInstance(ctx context.Context, instanceID string, details domain.FetchInstanceDetails) (domain.GetInstanceDetailsSpec, error) {
 	return domain.GetInstanceDetailsSpec{}, fmt.Errorf("Instances are not retrievable")
 }
 
@@ -49,7 +49,7 @@ func (b *broker) Bind(context context.Context, instanceID, bindingID string, det
 	}, nil
 }
 
-func (b *broker) GetBinding(ctx context.Context, instanceID, bindingID string) (domain.GetBindingSpec, error) {
+func (b *broker) GetBinding(ctx context.Context, instanceID, bindingID string, details domain.FetchBindingDetails) (domain.GetBindingSpec, error) {
 	return domain.GetBindingSpec{}, fmt.Errorf("Bindings are not retrievable")
 }
 

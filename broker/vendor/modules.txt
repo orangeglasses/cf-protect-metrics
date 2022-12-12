@@ -10,27 +10,18 @@ github.com/gorilla/mux
 # github.com/kelseyhightower/envconfig v1.4.0
 ## explicit
 github.com/kelseyhightower/envconfig
-# github.com/pborman/uuid v0.0.0-20180906182336-adf5a7427709
+# github.com/pborman/uuid v1.2.1
 ## explicit
 github.com/pborman/uuid
-# github.com/pivotal-cf/brokerapi v6.4.2+incompatible
-## explicit
-github.com/pivotal-cf/brokerapi
-github.com/pivotal-cf/brokerapi/auth
-github.com/pivotal-cf/brokerapi/domain
-github.com/pivotal-cf/brokerapi/domain/apiresponses
-github.com/pivotal-cf/brokerapi/handlers
-github.com/pivotal-cf/brokerapi/middlewares
-github.com/pivotal-cf/brokerapi/utils
-# github.com/pivotal-cf/brokerapi/v7 v7.5.0
-## explicit
-github.com/pivotal-cf/brokerapi/v7
-github.com/pivotal-cf/brokerapi/v7/auth
-github.com/pivotal-cf/brokerapi/v7/domain
-github.com/pivotal-cf/brokerapi/v7/domain/apiresponses
-github.com/pivotal-cf/brokerapi/v7/handlers
-github.com/pivotal-cf/brokerapi/v7/middlewares
-github.com/pivotal-cf/brokerapi/v7/utils
+# github.com/pivotal-cf/brokerapi/v8 v8.2.3
+## explicit; go 1.19
+github.com/pivotal-cf/brokerapi/v8
+github.com/pivotal-cf/brokerapi/v8/auth
+github.com/pivotal-cf/brokerapi/v8/domain
+github.com/pivotal-cf/brokerapi/v8/domain/apiresponses
+github.com/pivotal-cf/brokerapi/v8/handlers
+github.com/pivotal-cf/brokerapi/v8/middlewares
+github.com/pivotal-cf/brokerapi/v8/utils
 # github.com/pkg/errors v0.9.1
 ## explicit
 github.com/pkg/errors

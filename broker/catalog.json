@@ -6,7 +6,8 @@
     "bindings_retrievable": false,
     "instances_retrievable": false,
     "tags": [ "monitoring", "prometheus" ],
-    "plan_updateable": true,
+    "plan_updateable": false,
+    "requires": ["route_forwarding"],
     "plans": [
       {
         "id": "0a036ec2-17ec-4a69-af0e-8a051fefb79b",

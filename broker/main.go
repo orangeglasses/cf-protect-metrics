@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"code.cloudfoundry.org/lager"
-	"github.com/pivotal-cf/brokerapi/v7"
+	brokerapi "github.com/pivotal-cf/brokerapi/v8"
 )
 
 func main() {
