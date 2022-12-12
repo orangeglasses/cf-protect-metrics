@@ -1,0 +1,27 @@
+[ {
+    "id": "61cd6dab-3234-454a-9db3-2436fb27e609",
+    "name": "protect-metrics",
+    "description": "Protect /metrics endpoint",
+    "bindable": true,
+    "bindings_retrievable": false,
+    "instances_retrievable": false,
+    "tags": [ "monitoring", "prometheus" ],
+    "plan_updateable": true,
+    "plans": [
+      {
+        "id": "0a036ec2-17ec-4a69-af0e-8a051fefb79b",
+        "name": "basic",
+        "description": "basic auth protection on /metrics endpoints",
+        "free": true,
+        "metadata": {
+          "displayName": "Protect metrics endpoints"
+        }
+      }
+    ],
+    "metadata": {
+      "displayName": "protect-metrics",
+      "documentationUrl": "",
+      "longDescription": "Protect /metrics endpoint",
+      "providerDisplayName": "HaaS"      
+    }
+  } ]
