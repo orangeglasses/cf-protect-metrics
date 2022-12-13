@@ -18,8 +18,8 @@ const (
 )
 
 type config struct {
-	MetricsUser          string   `envconfig:"metricsuser"`
-	MetricsPassword      string   `envconfig:"metricspassword"`
+	MetricsUser          string   `envconfig:"metricsuser" required:"true"`
+	MetricsPassword      string   `envconfig:"metricspassword" required:"true"`
 	MetricsEndpoint      string   `envconfig:"metricsendpoind" default:"/metrics"`
 	expectedUsernameHash [32]byte `ignored:"true"`
 	expectedPasswordHash [32]byte `ignored:"true"`
